@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Átila — Creative Direction • Design • Advertising</title>
+  <meta name="description" content="Átila — creative direction, design and advertising. Cover art for Seu Jorge, Papatinho, Black Alien, Haikaiss and Kayblack, plus branding, social media and events.">
+  <!-- Validation version: kept out of search engines for now; remove when it becomes the main site -->
+  <meta name="robots" content="noindex">
+  <!-- Link preview (WhatsApp, iMessage, social). Absolute URLs: update them if the domain changes -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Átila">
+  <meta property="og:title" content="Átila — Creative Direction • Design • Advertising">
+  <meta property="og:description" content="Cover art for Seu Jorge, Papatinho, Black Alien, Haikaiss and Kayblack, plus branding, social media and events.">
+  <meta property="og:url" content="https://pinkfeelingsllc-glitch.github.io/atila-page/">
+  <meta property="og:image" content="https://pinkfeelingsllc-glitch.github.io/atila-page/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Átila">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header: name first, photo beside it, controls in thumb reach -->
+  <header class="site-head" id="site-head">
+    <div class="head-top">
+      <h1 class="wordmark" id="wordmark">ÁTILA</h1>
+      <div class="avatar" id="avatar" aria-hidden="true"></div>
+    </div>
+    <p class="tagline" id="tagline">Creative Direction • Design • Advertising</p>
+    <p class="location" id="location"></p>
+    <p class="artists" id="artists"></p>
+
+    <div class="head-bottom">
+      <nav class="social" aria-label="Profiles">
+        <a id="link-instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a id="link-behance" href="#" target="_blank" rel="noopener">Behance</a>
+      </nav>
+      <div class="controls">
+        <button class="ctl" id="present-btn" type="button" data-i18n-aria="presentOn">
+          <span class="ctl-icon" aria-hidden="true">⤢</span><span class="ctl-text" data-i18n="present"></span>
+        </button>
+        <div class="lang" role="group" aria-label="Language">
+          <button class="lang-btn" type="button" data-lang="en">EN</button>
+          <span class="lang-sep" aria-hidden="true">/</span>
+          <button class="lang-btn" type="button" data-lang="pt">PT</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Category tabs (sticky) -->
+  <div class="cats-sentinel" id="cats-sentinel" aria-hidden="true"></div>
+  <nav class="cats" id="cats" aria-label="Categories">
+    <span class="cats-mark" aria-hidden="true">ÁTILA</span>
+    <div class="cats-track" role="tablist" id="cats-track"></div>
+    <button class="exit-present" id="exit-present" type="button" data-i18n="exitPresent"></button>
+  </nav>
+
+  <!-- Work: three projects of the active category. Swipe sideways to change category. -->
+  <main class="work" id="work" aria-live="polite"></main>
+
+  <footer class="site-foot">
+    <span id="foot-name">Átila</span>
+    <a id="foot-instagram" href="#" target="_blank" rel="noopener">Instagram</a>
+    <a id="foot-behance" href="#" target="_blank" rel="noopener">Behance</a>
+    <a id="foot-email" href="#"></a>
+  </footer>
+
+  <!-- Viewer (lightbox) -->
+  <div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-hidden="true" hidden>
+    <div class="viewer-top">
+      <div class="viewer-meta">
+        <span class="viewer-title" id="viewer-title"></span>
+        <span class="viewer-pos" id="viewer-pos"></span>
+      </div>
+      <button class="vbtn vbtn-close" id="viewer-close" type="button" data-i18n-aria="close">
+        <span aria-hidden="true">✕</span>
+      </button>
+    </div>
+
+    <div class="viewer-stage" id="viewer-stage"></div>
+
+    <div class="viewer-dots" id="viewer-dots" aria-hidden="true"></div>
+
+    <div class="viewer-bottom">
+      <button class="vbtn" id="viewer-prev" type="button" data-i18n-aria="prev"><span aria-hidden="true">←</span></button>
+      <button class="vbtn vbtn-sound" id="viewer-sound" type="button" data-i18n-aria="soundOn">
+        <span class="snd-icon" aria-hidden="true"></span><span class="snd-text" id="viewer-sound-text"></span>
+      </button>
+      <button class="vbtn" id="viewer-next" type="button" data-i18n-aria="next"><span aria-hidden="true">→</span></button>
+    </div>
+  </div>
+
+  <script src="data/projects.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

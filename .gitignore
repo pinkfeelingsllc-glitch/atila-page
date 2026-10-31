@@ -1,0 +1,8 @@
+shots/
+*.log
+.DS_Store
+assets/videos/_test.mp4
+
+# local only: the repository and the site are public
+CLAUDE.md
+MATERIAIS-PENDENTES.md
